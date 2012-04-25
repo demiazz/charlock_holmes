@@ -63,7 +63,7 @@ Dir.chdir("#{CWD}/src") do
   end
 end
 
-FileUtils.cp "#{CWD}/dst/lib/libmagic.a", "#{CWD}/libmagic_ext.a"
+FileUtils.cp "#{CWD}/dst/lib64/libmagic.a", "#{CWD}/libmagic_ext.a"
 
 $INCFLAGS[0,0] = " -I#{CWD}/dst/include "
 $LDFLAGS << " -L#{CWD} "
